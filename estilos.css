@@ -1,0 +1,186 @@
+/* --- ESTILOS GENERALES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* --- ENCABEZADO CON LOGO Y FACEBOOK --- */
+header {
+    background: linear-gradient(135deg, #1a365d 0%, #2a4365 100%);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-empresa {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.btn-facebook {
+    display: inline-block;
+    background-color: #1877f2;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-facebook:hover {
+    background-color: #166fe5;
+}
+
+/* --- SECCIONES --- */
+h2 {
+    color: #1a365d;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #3182ce;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.seccion-sobre {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.seccion-sobre p {
+    font-size: 1.1rem;
+    color: #4a5568;
+    text-align: justify;
+}
+
+/* --- GRID DE APLICACIONES --- */
+.grid-apps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.tarjeta-app {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid #3182ce;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta-app h3 {
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+.tarjeta-app p {
+    color: #4a5568;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    text-align: justify;
+}
+
+/* Etiquetas (Badges) */
+.tarjeta-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+/* Botones de Apps */
+.botones-app {
+    margin-top: auto;
+}
+
+.btn {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primario {
+    background-color: #25d366; /* Color verde oficial de WhatsApp */
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #128c7e;
+}
+
+.btn-secundario {
+    background-color: #edf2f7;
+    color: #2b6cb0;
+    border: 1px solid #e2e8f0;
+}
+
+.btn-secundario:hover {
+    background-color: #e2e8f0;
+}
+
+/* --- PIE DE PÁGINA (FOOTER) --- */
+footer {
+    background-color: #1a365d;
+    color: #e2e8f0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contenedor-footer a {
+    color: #63b3ed;
+    text-decoration: none;
+}
+
+.contenedor-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #a0aec0;
+}
