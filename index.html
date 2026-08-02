@@ -1,77 +1,293 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOETRA S.A.S. - Software Especializado en Transporte</title>
-    <!-- Vinculamos el archivo de estilos -->
-    <link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07182e">
+  <meta name="description" content="SOETRA desarrolla soluciones tecnológicas para la movilidad urbana, la ingeniería de tránsito y el transporte público.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:title" content="SOETRA | Tecnología que mueve ciudades">
+  <meta property="og:description" content="Aplicaciones y herramientas especializadas para movilidad urbana, tránsito y transporte.">
+  <meta property="og:image" content="og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SOETRA | Tecnología que mueve ciudades">
+  <meta name="twitter:description" content="Conoce Movilidad Integrada CDMX y nuestras soluciones para transporte e ingeniería.">
+  <meta name="twitter:image" content="og.png">
+  <title>SOETRA | Tecnología que mueve ciudades</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Encabezado con Logotipo y Redes -->
-    <header>
-        <div class="contenedor-header">
-            <!-- Logotipo oficial -->
-            <img src="logo.png" alt="SOETRA S.A.S." class="logo-empresa">
-            
-            <!-- Enlace a Facebook -->
-            <div class="redes-header">
-                <a href="https://www.facebook.com/people/Soetra-SA-de-CV/61584671135429/?rdid=SdgKqHS3VuUtL88T&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E42CCXfKV%2F" class="btn-facebook" target="_blank">
-                    Visítanos en Facebook
-                </a>
-            </div>
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="SOETRA, inicio">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SOETRA</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#aplicaciones">Aplicaciones</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.benjaminramirezislas.movilidadintegradacdmx" target="_blank" rel="noopener">Descargar app</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+      <div class="route-lines" aria-hidden="true">
+        <span class="route route-one"></span>
+        <span class="route route-two"></span>
+        <span class="route route-three"></span>
+      </div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow"><span class="status-dot"></span> Tecnología mexicana para la movilidad</span>
+          <h1>Tecnología que <span>mueve ciudades</span></h1>
+          <p>Diseñamos aplicaciones y herramientas especializadas para entender el tránsito, conectar el transporte y hacer más simples los recorridos urbanos.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="https://play.google.com/store/apps/details?id=com.benjaminramirezislas.movilidadintegradacdmx" target="_blank" rel="noopener">
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span><small>Disponible en</small>Google Play</span>
+            </a>
+            <a class="button button-ghost" href="#aplicaciones">Conocer aplicaciones <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof">
+            <div><strong>2</strong><span>Soluciones digitales</span></div>
+            <div><strong>CDMX</strong><span>Movilidad conectada</span></div>
+            <div><strong>Local</strong><span>Tecnología propia</span></div>
+          </div>
         </div>
-    </header>
 
-    <!-- Contenido Principal -->
-    <main class="contenedor">
-        
-        <!-- Sección Sobre la Empresa -->
-        <section class="seccion-sobre">
-            <h2>Sobre Nosotros</h2>
-            <p>En SOETRA nos dedicamos al desarrollo de herramientas lógicas, modelos matemáticos y soluciones tecnológicas avanzadas para la ingeniería de tránsito y el transporte urbano. Optimizamos el análisis de flujos vehiculares a través de software especializado de procesamiento local.</p>
-        </section>
-
-        <!-- Sección de Aplicaciones -->
-        <section class="seccion-apps">
-            <h2>Nuestras Aplicaciones Móviles</h2>
-            <div class="grid-apps">
-                
-                <!-- Tarjeta App 1: Modelos de Tránsito -->
-                <div class="tarjeta-app">
-                    <div class="tarjeta-badge">Ya Disponible</div>
-                    <h3>Modelos de Tránsito</h3>
-                    <p>Herramienta digital de ingeniería para calcular parámetros macroscópicos de flujo vehicular en tiempo real. Permite el análisis matemático de variables de tránsito (densidad de congestión, velocidad de flujo libre) y exportación directa de reportes ejecutivos en formato PDF.</p>
-                    <div class="botones-app">
-                        <a href="privacy/modelos-de-transito.html" class="btn btn-secundario" target="_blank">Política de Privacidad</a>
-                    </div>
+        <div class="hero-visual reveal" aria-label="Vista conceptual de Movilidad Integrada CDMX">
+          <div class="phone">
+            <div class="phone-speaker"></div>
+            <div class="phone-screen">
+              <div class="app-top">
+                <div>
+                  <small>Buenos días</small>
+                  <strong>¿A dónde vamos?</strong>
                 </div>
-
-                <!-- Tarjeta App 2: Movilidad Integrada CDMX -->
-                <div class="tarjeta-app">
-                    <div class="tarjeta-badge">Ya Disponible</div>
-                    <h3>Movilidad Integrada CDMX</h3>
-                    <p>Solución tecnológica avanzada orientada a consultar rutas, servicios y transporte público de la Ciudad de México, incluyendo un sistema de chat ciudadano para reportes y comunicación en tiempo real.</p>
-                    <div class="botones-app" style="display: flex; flex-direction: column; gap: 10px;">
-                        <a href="https://whatsapp.com/channel/0029VaKtlJN2UPBOA9nvnr1c" class="btn btn-primario" target="_blank">Grupo de WhatsApp</a>
-                        <a href="privacy/terminos-movilidad-integrada.html" class="btn btn-secundario" target="_blank">Términos y Condiciones</a>
-                    </div>
+                <span class="avatar">S</span>
+              </div>
+              <div class="search-bar"><span>⌕</span> Buscar destino</div>
+              <div class="map">
+                <span class="map-road road-a"></span>
+                <span class="map-road road-b"></span>
+                <span class="map-road road-c"></span>
+                <span class="map-route"></span>
+                <span class="pin pin-a">M</span>
+                <span class="pin pin-b">B</span>
+                <span class="location-dot"></span>
+              </div>
+              <div class="nearby-card">
+                <div class="nearby-title"><strong>Transporte cercano</strong><span>Ver todo</span></div>
+                <div class="transport-row">
+                  <span class="transport-icon metro">M</span>
+                  <div><strong>Metro</strong><small>A 4 minutos</small></div>
+                  <b>›</b>
                 </div>
-
+                <div class="transport-row">
+                  <span class="transport-icon bus">MB</span>
+                  <div><strong>Metrobús</strong><small>A 7 minutos</small></div>
+                  <b>›</b>
+                </div>
+              </div>
             </div>
-        </section>
-
-    </main>
-
-    <!-- Pie de Página -->
-    <footer>
-        <div class="contenedor-footer">
-            <p><strong>CEO:</strong> Ing. Benjamín Ramírez Islas</p>
-            <p>Soporte Técnico: <a href="mailto:SoetraSa@outlook.com">SoetraSa@outlook.com</a></p>
-            <p class="copyright">&copy; 2026 SOETRA S.A.S. Todos los derechos reservados.</p>
+          </div>
+          <div class="floating-card weather"><span>☀</span><div><strong>24 °C</strong><small>Clima local</small></div></div>
+          <div class="floating-card alert"><span>✓</span><div><strong>Red conectada</strong><small>Información a tu alcance</small></div></div>
         </div>
-    </footer>
+      </div>
+    </section>
 
+    <section class="featured section" id="aplicaciones">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="kicker">Aplicación destacada</span>
+          <h2>Tu ciudad, más fácil de recorrer</h2>
+          <p>Movilidad Integrada CDMX reúne información útil para ayudarte a conocer los sistemas de transporte y encontrar opciones cercanas desde un solo lugar.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card reveal">
+            <span class="feature-icon cyan" aria-hidden="true">⌖</span>
+            <h3>Transporte cercano</h3>
+            <p>Consulta estaciones y servicios próximos a tu ubicación para comenzar tu recorrido.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon green" aria-hidden="true">⌁</span>
+            <h3>Red integrada</h3>
+            <p>Explora Metro, Metrobús, RTP, Trolebús, Cablebús, Tren Ligero y otros servicios.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon violet" aria-hidden="true">☂</span>
+            <h3>Clima y avisos</h3>
+            <p>Consulta información contextual para anticipar condiciones que pueden afectar tu traslado.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon amber" aria-hidden="true">✦</span>
+            <h3>Asistente inteligente</h3>
+            <p>Haz consultas sobre rutas y transporte mediante una experiencia conversacional sencilla.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon blue" aria-hidden="true">◎</span>
+            <h3>Mapa interactivo</h3>
+            <p>Ubica servicios sobre el mapa y comprende mejor lo que tienes alrededor.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span class="feature-icon rose" aria-hidden="true">✉</span>
+            <h3>Comunidad</h3>
+            <p>Comparte información y mantente en contacto mediante los canales ciudadanos.</p>
+          </article>
+        </div>
+
+        <div class="download-banner reveal">
+          <div>
+            <span class="kicker light">Disponible para Android</span>
+            <h2>Lleva la movilidad de la CDMX contigo</h2>
+            <p>Descarga Movilidad Integrada CDMX desde Google Play y comienza a explorar.</p>
+          </div>
+          <a class="button button-light" href="https://play.google.com/store/apps/details?id=com.benjaminramirezislas.movilidadintegradacdmx" target="_blank" rel="noopener">
+            <span class="play-icon" aria-hidden="true">▶</span>
+            <span><small>Descárgala en</small>Google Play</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="network section">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <span class="kicker">Movilidad conectada</span>
+          <h2>Una red, muchos caminos</h2>
+        </div>
+        <div class="network-list reveal" aria-label="Sistemas de transporte">
+          <span><b class="line line-pink"></b>Metro</span>
+          <span><b class="line line-red"></b>Metrobús</span>
+          <span><b class="line line-green"></b>RTP</span>
+          <span><b class="line line-blue"></b>Trolebús</span>
+          <span><b class="line line-purple"></b>Cablebús</span>
+          <span><b class="line line-teal"></b>Tren Ligero</span>
+          <span><b class="line line-orange"></b>El Insurgente</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="models section">
+      <div class="container product-grid">
+        <div class="product-copy reveal">
+          <span class="kicker">Herramienta profesional</span>
+          <h2>Modelos de Tránsito</h2>
+          <p>Una aplicación de ingeniería para calcular parámetros macroscópicos de flujo vehicular y convertir resultados técnicos en información clara.</p>
+          <ul class="check-list">
+            <li><span>✓</span>Cálculos y modelos matemáticos de tránsito</li>
+            <li><span>✓</span>Gráficas para interpretar resultados</li>
+            <li><span>✓</span>Procesamiento local en el dispositivo</li>
+            <li><span>✓</span>Exportación de reportes en PDF</li>
+          </ul>
+          <a class="text-link" href="privacy/modelos-de-transito.html">Consultar política de privacidad <span>→</span></a>
+        </div>
+        <div class="dashboard-card reveal" aria-label="Representación de análisis de flujo vehicular">
+          <div class="dashboard-head"><div><small>ANÁLISIS ACTIVO</small><strong>Flujo vehicular</strong></div><span>•••</span></div>
+          <div class="metrics">
+            <div><small>Flujo máximo</small><strong>2,100</strong><span>veh/h</span></div>
+            <div><small>Velocidad libre</small><strong>60</strong><span>km/h</span></div>
+            <div><small>Densidad crítica</small><strong>35</strong><span>veh/km</span></div>
+          </div>
+          <div class="chart">
+            <div class="chart-grid"></div>
+            <div class="chart-area"></div>
+            <div class="chart-line"></div>
+            <span class="chart-point"></span>
+          </div>
+          <div class="chart-legend"><span><b></b>Modelo Greenshields</span><span>Reporte listo</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-mark reveal" aria-hidden="true">
+          <span>S</span>
+          <i class="orbit orbit-one"></i>
+          <i class="orbit orbit-two"></i>
+        </div>
+        <div class="about-copy reveal">
+          <span class="kicker">Sobre SOETRA</span>
+          <h2>Ingeniería, software y movilidad en un mismo equipo</h2>
+          <p>En Software Especializado en Transporte desarrollamos herramientas lógicas, modelos matemáticos y soluciones tecnológicas para la ingeniería de tránsito y el transporte urbano.</p>
+          <p>Nuestra misión es convertir información compleja en experiencias digitales accesibles que ayuden a comprender y mejorar la forma en que nos movemos.</p>
+          <div class="values">
+            <span><b>01</b>Innovación útil</span>
+            <span><b>02</b>Rigor técnico</span>
+            <span><b>03</b>Impacto urbano</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contacto">
+      <div class="container contact-card reveal">
+        <div>
+          <span class="kicker light">Hablemos</span>
+          <h2>¿Tienes una pregunta o una idea?</h2>
+          <p>Estamos disponibles para soporte, comentarios y oportunidades de colaboración.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:SoetraSa@outlook.com">Enviar correo</a>
+          <a class="button button-outline-light" href="https://whatsapp.com/channel/0029VaKtlJN2UPBOA9nvnr1c" target="_blank" rel="noopener">Canal de WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#inicio"><span class="brand-mark">S</span><span>SOETRA</span></a>
+        <p>Software especializado para transporte, tránsito y movilidad urbana.</p>
+      </div>
+      <div>
+        <h3>Aplicaciones</h3>
+        <a href="https://play.google.com/store/apps/details?id=com.benjaminramirezislas.movilidadintegradacdmx" target="_blank" rel="noopener">Movilidad Integrada CDMX</a>
+        <a href="#aplicaciones">Modelos de Tránsito</a>
+      </div>
+      <div>
+        <h3>Información</h3>
+        <a href="privacy/movilidad-integrada.html">Privacidad — Movilidad Integrada</a>
+        <a href="privacy/modelos-de-transito.html">Privacidad — Modelos de Tránsito</a>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <a href="mailto:SoetraSa@outlook.com">SoetraSa@outlook.com</a>
+        <a href="https://www.facebook.com/people/Soetra-SA-de-CV/61584671135429/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://whatsapp.com/channel/0029VaKtlJN2UPBOA9nvnr1c" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> SOFTWARE ESPECIALIZADO EN TRANSPORTE S.A.S. de C.V.</p>
+      <p>Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <a class="mobile-download" href="https://play.google.com/store/apps/details?id=com.benjaminramirezislas.movilidadintegradacdmx" target="_blank" rel="noopener" aria-label="Descargar Movilidad Integrada CDMX en Google Play">
+    <span>▶</span> Descargar app
+  </a>
 </body>
 </html>
