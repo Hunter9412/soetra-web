@@ -3,47 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eliminación de Cuenta - SOETRA</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Eliminación de Cuenta y Datos - Movilidad Integrada CDMX</title>
     <link rel="icon" href="favicon.png" type="image/png">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #222; }
-        h1 { color: #0d47a1; margin-bottom: 5px; }
-        .meta { color: #555; margin-bottom: 25px; font-size: 0.95rem; }
-        .card { background: #f4f6f8; border-left: 4px solid #0d47a1; border-radius: 4px; padding: 18px; margin: 20px 0; }
-        ul, ol { padding-left: 20px; }
-        li { margin-bottom: 8px; }
-        code { background: #e0e0e0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f6f9;
+            color: #333333;
+            line-height: 1.6;
+            padding: 40px 15px;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+        .header {
+            background: #0f172a;
+            color: #ffffff;
+            padding: 32px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .header p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+        .content {
+            padding: 30px;
+        }
+        .info-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin-bottom: 25px;
+            font-size: 0.92rem;
+            color: #475569;
+        }
+        .info-card strong {
+            color: #1e293b;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #1e293b;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 11px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            color: #1e293b;
+            background: #ffffff;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 5px;
+            font-size: 0.88rem;
+            color: #475569;
+        }
+        .checkbox-group input {
+            margin-top: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background: #dc2626;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.2s, transform 0.1s;
+            margin-top: 10px;
+        }
+        button[type="submit"]:hover {
+            background: #b91c1c;
+        }
+        button[type="submit"]:active {
+            transform: scale(0.99);
+        }
+        .policy-details {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            font-size: 0.88rem;
+            color: #64748b;
+        }
+        .policy-details h3 {
+            font-size: 1rem;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+        .policy-details p {
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.82rem;
+            color: #94a3b8;
+            margin-top: 25px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Solicitud de Eliminación de Cuenta y Datos</h1>
-    <div class="meta">
-        <p><strong>Entidad / Desarrollador:</strong> SOETRA S.A.S. de C.V.</p>
-        <!-- Sustituye [NOMBRE EXACTO DE TU APP] por el nombre idéntico que tiene en Play Console -->
-        <p><strong>Aplicación:</strong> MOVILIDAD INTEGRADA DE LA CDMX</p>
+<div class="container">
+    <div class="header">
+        <h1>Solicitud de Eliminación de Cuenta y Datos</h1>
+        <p>SOETRA S.A.S. de C.V. &bull; Gestión de Privacidad</p>
     </div>
 
-    <div class="card">
-        <h2>¿Cómo solicitar la eliminación de tu cuenta?</h2>
-        <p>Los usuarios pueden solicitar el borrado definitivo de su cuenta y los datos personales asociados siguiendo estos pasos:</p>
-        <ol>
-            <li>Envía un correo electrónico a: <strong>SOETRASA@outlook.com</strong></li>
-            <li>Usa como asunto: <code>Eliminación de cuenta - MOVILIDAD INTEGRADA DE LA  CDMX</code></li>
-            <li>En el cuerpo del mensaje, proporciona el correo o identificador asociado a tu cuenta en la app.</li>
-        </ol>
-        <p>Tu solicitud será procesada y confirmada en un plazo no mayor a 3 días hábiles.</p>
+    <div class="content">
+        <!-- Referencias explícitas exigidas por las políticas de Google Play -->
+        <div class="info-card">
+            <p><strong>Entidad / Desarrollador:</strong> SOETRA S.A.S. de C.V.</p>
+            <p><strong>Aplicación:</strong> Movilidad Integrada CDMX</p>
+            <p style="margin-top: 8px;">
+                Conforme a la normativa de privacidad y los requisitos de Google Play, este formulario te permite solicitar el borrado permanente de tu cuenta y los datos personales asociados.
+            </p>
+        </div>
+
+        <!-- Formulario configurado para enviar a soetrasa@outlook.com sin backend -->
+        <form action="https://formsubmit.co/soetrasa@outlook.com" method="POST">
+            <!-- Configuración oculta para el envío de correo -->
+            <input type="hidden" name="_subject" value="Nueva Solicitud: Eliminación de Cuenta - Movilidad Integrada CDMX">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <div class="form-group">
+                <label for="appName">Aplicación</label>
+                <input type="text" id="appName" name="Aplicacion" value="Movilidad Integrada CDMX" readonly style="background-color: #f1f5f9; color: #475569;">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico de la cuenta a eliminar *</label>
+                <input type="email" id="email" name="Email_Cuenta" placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tipo_solicitud">Tipo de solicitud *</label>
+                <select id="tipo_solicitud" name="Tipo_Solicitud" required>
+                    <option value="Eliminación total de cuenta y todos los datos">Eliminar mi cuenta completa y todos los datos asociados</option>
+                    <option value="Eliminación de datos específicos de actividad">Eliminar únicamente el historial y registros de actividad</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="motivo">Motivo de la solicitud (opcional)</label>
+                <textarea id="motivo" name="Motivo_Opcional" rows="3" placeholder="Indica brevemente el motivo o detalles adicionales..."></textarea>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm" required>
+                <label for="confirm">Confirmo que deseo solicitar la eliminación irreversible de mi cuenta y que he leído las condiciones de retención de datos.</label>
+            </div>
+
+            <button type="submit">Enviar Solicitud de Eliminación</button>
+        </form>
+
+        <div class="policy-details">
+            <h3>¿Qué sucede tras enviar tu solicitud?</h3>
+            <p>1. <strong>Plazo de procesamiento:</strong> Tu solicitud será atendida por el equipo de <strong>SOETRA S.A.S. de C.V.</strong> en un plazo máximo de 3 a 5 días hábiles.</p>
+            <p>2. <strong>Datos eliminados:</strong> Se borrarán de forma definitiva identificadores de usuario, credenciales y preferencias registradas en la aplicación.</p>
+            <p>3. <strong>Retención de datos:</strong> No se conservan datos personales tras la eliminación, salvo aquellos requeridos por disposiciones legales o regulatorias aplicables.</p>
+        </div>
     </div>
+</div>
 
-    <h2>¿Qué datos se eliminan?</h2>
-    <ul>
-        <li>Credenciales de acceso y perfil del usuario (correo electrónico, identificador único).</li>
-        <li>Registros de uso, configuraciones y preferencias vinculadas al usuario.</li>
-    </ul>
-
-    <h2>Retención de datos</h2>
-    <p>Todos los identificadores de usuario y datos personales son eliminados de forma permanente. No se conserva ninguna copia salvo que exista una obligación legal o fiscal vigente.</p>
+<div class="footer">
+    &copy; SOETRA S.A.S. de C.V. &bull; Todos los derechos reservados.
+</div>
 
 </body>
 </html>
